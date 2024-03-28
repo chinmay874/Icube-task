@@ -203,17 +203,18 @@ p{
     cursor: pointer;
 }
 #close_alert{
-    height: 50vh;
-    width: 50vw;
+    height: 30vh;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     text-align: center;
     border: 1px solid black;
-    background-color: red;
+    border-radius: 5px;
 }
 #cancel{
     height: 5vh;
     background-color: rgb(238, 111, 65);
+    border: none;
 }
 #cancel:hover{
     cursor: pointer;
@@ -221,7 +222,7 @@ p{
 #proceed{
     height:5vh;
     background-color: rgb(238, 111, 65);
-    border: 1px solid rgb(238, 111, 65);
+    border: 1px solid rgb(95, 93, 92);
 }
 #proceed:hover{
     cursor: pointer;
@@ -229,4 +230,6 @@ p{
 #button_row{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 3vh 5vw;
 }
