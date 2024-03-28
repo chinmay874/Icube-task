@@ -167,6 +167,13 @@ p{
     border-radius: 3px ;
 }
 
+#screen3{
+    height: 45vh;
+    width: 40vw;
+    border: 1px solid black;
+    border-radius: 3px ;
+}
+
 #img_drag{
     border: 1px dashed gray;
     border-radius: 5px;
@@ -196,8 +203,8 @@ p{
     cursor: pointer;
 }
 #close_alert{
-    height: 80vh;
-    width: 80vw;
+    height: 50vh;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     text-align: center;
