@@ -12,7 +12,6 @@
 
 
 
-
     <script>
         function handle_click(){
             document.getElementById("screen1").innerHTML =`
@@ -43,36 +42,37 @@
         }
 
         function upload_image(){
-            document.getElementById("screen1").innerHTML =`
+            document.getElementById("upload_scr").innerHTML =`
                 <div id="screen2">
                     <div id="screen1_header">
-                    <img id="back" src="img/backbutton.jpg">
+                    <img id="back" onClick="close()" src="img/backbutton.jpg">
                     <h4>Upload custom image</h4>
-                    <img id="cross" src="img/cross.png" onClick="Close()">
+                    <img id="cross" src="img/cross.png" onClick="close()">
                     </div>
                     <hr>  
                     <div id="img_drag">
                         <img id="drag_img" src="img/drag.png">
-                        <p><b>Drag your image here or</b> <span id="para_color">browse</span> </p>
+                        <p><b>Drag your image here or</b> <span id="para_color"><label for="fileInput" id="browseLink">browse</label></span> </p>
+                        <input type="file" id="fileInput">
                         <p> Support jpeg, jpg & png</p>
                     </div>  
                     <button id="proceed_btn" onClick="img_upload()">Proceed to continue</button>
-                </div>
-            `
+                </div>`
         }
 
         function img_upload(){
             document.getElementById("screen2").innerHTML =`
-                <div id="screen2">
+                <div id="screen3">
                     <div id="screen1_header">
-                    <img id="back" src="img/backbutton.jpg">
+                    <img id="back" onClick="close()" src="img/backbutton.jpg">
                     <h4>Upload custom image</h4>
-                    <img id="cross" src="img/cross.png" onClick="Close()">
+                    <img id="cross" onClick="close()" src="img/cross.png">
                     </div>
                     <hr>  
                     <div id="img_drag">
                         <img id="drag_img" src="img/drag.png">
-                        <p><b>Drag your image here or</b> <span id="para_color">browse</span> </p>
+                        <p><b>Drag your image here or</b> <span id="para_color"><label for="fileInput" id="browseLink">browse</label></span> </p>
+                        <input type="file" id="fileInput">
                         <p> Support jpeg, jpg & png</p>
                     </div>  
                     <div id="uploaded_img">
@@ -80,18 +80,18 @@
                     </div>
 
                     <button id="proceed_btn" onClick="img_upload()">Proceed to continue</button>
-                </div>
-            `
+                </div>`
         }
         function close(){
-            document.getElementById("").innerHTML =`
+            document.getElementById("screen2").innerHTML =`
             <div id="close_alert">
                 <h3>Are you sure to cancel this panel?</h3>   
                 <p> Are you sure to cancel this panel?</p>
-                <button id="cancel">Cancel</button>
-                <button id="proceed">Proceed</button>
-            </div>
-            `
+                <div id="button_row">
+                    <button id="cancel">Cancel</button>
+                    <button id="proceed">Proceed</button>
+                </div>
+            </div>`
         }
     </script>
 </body>

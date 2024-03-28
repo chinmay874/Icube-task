@@ -13,6 +13,9 @@ body{
     font-size: 18px;
     background-color: rgb(213, 213, 218);
 }
+.home_btn:hover{
+    cursor: pointer;
+}
 #screen1{
     margin: 10vh auto auto auto;
 }
@@ -21,7 +24,7 @@ body{
     flex-direction: column;
     border: 1px solid black;
     /* box-shadow: 1px 1px 1px 1px rgb(243, 246, 247); */
-    height: 47vh;
+    height: 50vh;
     width: 40vw;
     border-radius: 2px;
     text-align: start;
@@ -73,10 +76,18 @@ h4 {
 #setbutton{
     margin: 1vw;
 }
+#setbutton:hover{
+    cursor: pointer;
+}
+#fileInput{
+    display: none;
+}
+
+
 #clickcheckbox{
     flex-direction: row;
     text-align: start;
-    margin:1vh 0 0 2vw;
+    margin:1vh 0 2vh 2vw;
 }
 @media(max-width:768px){
     #upload_scr{
@@ -137,14 +148,20 @@ p{
     align-items: start;
     margin-right: 12vw;
 }
+#back:hover{
+    cursor: pointer;
+}
 #cross{
     height: 5vh;
     width: 3vw;
     align-items: start;
     margin-left: auto;
 }
+#cross:hover{
+    cursor: pointer;
+}
 #screen2{
-    height: 47vh;
+    height: 45vh;
     width: 40vw;
     border: 1px solid black;
     border-radius: 3px ;
@@ -165,6 +182,9 @@ p{
 #para_color{
     color: orangered;
 }
+#browseLink:hover{
+    cursor: pointer;
+}
 #proceed_btn{
     background-color: rgb(250, 135, 94);
     margin: 2vh 33%;
@@ -172,20 +192,34 @@ p{
     height: 5vh;
     border: none;
 }
+#proceed_btn:hover{
+    cursor: pointer;
+}
 #close_alert{
-    height: 30vh;
-    width: 40vw;
+    height: 80vh;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     text-align: center;
     border: 1px solid black;
+    background-color: red;
 }
 #cancel{
     height: 5vh;
     background-color: rgb(238, 111, 65);
 }
+#cancel:hover{
+    cursor: pointer;
+}
 #proceed{
     height:5vh;
     background-color: rgb(238, 111, 65);
     border: 1px solid rgb(238, 111, 65);
+}
+#proceed:hover{
+    cursor: pointer;
+}
+#button_row{
+    display: flex;
+    flex-direction: row;
 }
