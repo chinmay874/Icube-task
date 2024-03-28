@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCubes_Task</title>
+    <link rel="stylesheet" href="Home_scr.css">
+</head>
+<body>
+    <button class="home_btn" onclick="handle_click()">Popup</button>
+    <div id="screen1"></div>
+
+
+
+
+    <script>
+        function handle_click(){
+            document.getElementById("screen1").innerHTML =`
+            <div id="upload_scr">
+                <h3>  How would you like to design your Badgets button</h3>
+                <div id="design_logo_btn">
+                    <div id="upload_design">
+                        <img id="setimage" src="img/download.png">
+                        <h4 id="head4">Upload a full design</h4>
+                        <p>-Have a complete design</p>
+                        <p>-Have your own design</p>
+                        <button id="setbutton" onClick="upload_image()">Upload Design</button>
+                    </div>
+                    <div id="online_design">
+                        <img id="setimage" src="img/design_here.png">
+                        <h4 id="head4">Design here online</h4>
+                        <p>-Already have your concept</p>
+                        <p>-Customise every detail</p>
+                        <button id="setbutton">Design Now</button>
+                    </div>   
+                </div>
+                <div id="clickcheckbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Yes, please send me a digital proof</label>
+                </div>
+                </div>`
+
+        }
+
+        function upload_image(){
+            document.getElementById("screen1").innerHTML =`
+                <div id="screen2">
+                    <div id="screen1_header">
+                    <img id="back" src="img/backbutton.jpg">
+                    <h4>Upload custom image</h4>
+                    <img id="cross" src="img/cross.png" onClick="Close()">
+                    </div>
+                    <hr>  
+                    <div id="img_drag">
+                        <img id="drag_img" src="img/drag.png">
+                        <p><b>Drag your image here or</b> <span id="para_color">browse</span> </p>
+                        <p> Support jpeg, jpg & png</p>
+                    </div>  
+                    <button id="proceed_btn" onClick="img_upload()">Proceed to continue</button>
+                </div>
+            `
+        }
+
+        function img_upload(){
+            document.getElementById("screen2").innerHTML =`
+                <div id="screen2">
+                    <div id="screen1_header">
+                    <img id="back" src="img/backbutton.jpg">
+                    <h4>Upload custom image</h4>
+                    <img id="cross" src="img/cross.png" onClick="Close()">
+                    </div>
+                    <hr>  
+                    <div id="img_drag">
+                        <img id="drag_img" src="img/drag.png">
+                        <p><b>Drag your image here or</b> <span id="para_color">browse</span> </p>
+                        <p> Support jpeg, jpg & png</p>
+                    </div>  
+                    <div id="uploaded_img">
+                        
+                    </div>
+
+                    <button id="proceed_btn" onClick="img_upload()">Proceed to continue</button>
+                </div>
+            `
+        }
+        function close(){
+            document.getElementById("").innerHTML =`
+            <div id="close_alert">
+                <h3>Are you sure to cancel this panel?</h3>   
+                <p> Are you sure to cancel this panel?</p>
+                <button id="cancel">Cancel</button>
+                <button id="proceed">Proceed</button>
+            </div>
+            `
+        }
+    </script>
+</body>
+</html>
